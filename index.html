@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./js/banner.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        /* jQuery 시작 */
+        $(function(){ /*전체 메뉴에서 그 해당칸들이 슬라이드업데고 마우스 아웃하면 슬라이드 다운 되는*/
+            $('.header_nav_subwrap').hide();
+            $('.header_navmenu').mouseenter(function(){
+               $('.header_nav_subwrap').stop().slideDown('fast');
+            }).mouseout(function(){
+                 $('header_nav_subwrap').stop().slideUp('fast');
+            });
+        });
+         /* jQuery 종료 */
+        </script>
+
+
+   <div class="gnb">
+    <div class="header_nav_wrap">
+        <nav>
+        <div class="header_logo">
+        <h1 class="log"><a href="#" target="_blank"><img src="images/logo.png" alt="11컨셉로고"></a></h1>
+    </div>
+    <div class="header_navmenu">
+    <ul>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">BEUTY</a></li>
+        <li><a href="#">LIFE</a></li>
+        <span>|</span>
+        <li><a href="#">BEST</a></li>
+        <li><a href="#">SALE</a></li>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">EXCLUSIVE</a></li>
+        <li><a href="#">PRE SHOW</a></li>
+        <li><a href="#">ORIGINAL</a></li>
+        <li><a href="#">브랜드</a></li>
+        <li><a href="#">기획전</a></li>
+    </ul>
+    </div><!--header_navmenu-->
+    <div class="nav_icon">
+        <ul>
+            <li><a href="#"><img src="./images/ico_join.svg" alt="회원가입" ><span>JOIN</span></a></li>
+            <li><a href="#"><img src="./images/ico_login.svg" alt="로그인"><span>LOGIN</span></a></li>
+            <li><a href="#"><img src="./images/ico_mypage.svg" alt="마이페이지"><span class="icon_my">MY</span></a></li>
+            <li><a href="#"><img src="./images/ico_bag.svg" alt="장바구니"><span class="icon_basket">1</span></a></li>
+        </ul>
+    </div>
+    <div class="nav_mobile"><img src="./images/menu-fill.svg" alt="모바일메뉴바"></div>
+    </nav>
+    <div class="header_nav_subwrap">
+        <ul>
+            <li class="nav_subtitle"><a href="">의류</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">EXLUSIVE</a></li>
+            <li ><a href="">상의</a></li>
+            <li ><a href="">바지</a></li>
+            <li ><a href="">원피스</a></li>
+            <li ><a href="">스커트</a></li>
+            <li ><a href="">점프수트</a></li>
+            <li ><a href="">셋업</a></li>
+            <li ><a href="">액티브웨어</a></li>    
+        </ul>
+        <ul>
+            <li class="nav_subtitle"><a href="">가방</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">숄더백</a></li>
+            <li ><a href="">크로스백</a></li>
+            <li ><a href="">토트백</a></li>
+            <li ><a href="">에코,캔버스백</a></li>
+            <li ><a href="">백팩</a></li>
+            <li ><a href="">클러치/a></li>
+            <li ><a href="">파우치</a></li>
+            <li ><a href="">미니백</a></li>    
+        </ul>
+        <ul>
+            <li class="nav_subtitle"><a href="">신발</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">해외브랜드</a></li>
+            <li ><a href="">EXLUSIVE</a></li>
+            <li ><a href="">바지</a></li>
+            <li ><a href="">원피스</a></li>
+            <li ><a href="">스커트</a></li>
+            <li ><a href="">점프수트</a></li>
+            <li ><a href="">셋업</a></li>
+            <li ><a href=""></a></li>    
+        </ul>
+        <ul>
+            <li class="nav_subtitle"><a href="" class="accessory">액세서리</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">해외브랜드</a></li>
+            <li ><a href="">EXLUSIVE</a></li>
+            <li ><a href="">주얼리</a></li>
+            <li ><a href="">모자</a></li>
+            <li ><a href="">시계</a></li>
+            <li ><a href="">지갑,카드케이스</a></li>
+            <li ><a href="">아이웨어</a></li>
+            <li ><a href="">벨트</a></li>    
+        </ul>
+        <ul class="nav_subtitle_img">
+            <li ><img src="./images/woman.jpg" alt="여성옷">
+                <p>다채로운 색을 담은 팔렛의<br> 여름</p>
+                <a href="" class="nav_subtitle_img_view">이벤트 전체보기</a></li>    
+        </ul>
+    </div>
+    </div><!--header_nav_wrap-->
+   </div><!--gnb-->
+
+<!--상세페이지 시작-->
+<div class="content_allwrap">
+    <div class="content_top_wrap">
+        <div class="content_top_nav">
+            <span><a href="#" class="furniture">가구, 인테리어</a></span>
+            <span><a href="#" class="light">조명</a></span>
+            <span><a href="#">포터블 조명</a></span>
+        </div><!--content_top_nav-->
+    </div><!--content_top_wrap-->
+    <div class="content_top_second">
+        <div class="content_second_banner">
+            <ul>
+            <li><img src="https://img.29cm.co.kr/next-product/2022/02/04/9fa5b933177449219300424123231ff6_20220204182706.jpg?width=500" alt="조명 이미지">
+             <p></p></li>
+                </ul>
+            
+            </div><!--content_second_banner-->
+            <div class="content_second_right">
+                <div class="content_second_line">
+                <h3>LEXON 렉슨 MINA M사이즈 미나 무드등 조명 램프-LH64</h3>
+                    <p>하트</p></div>
+                <ul>
+                    <li><img src="./images/starclone.svg" alt="별다섯개"><a href="#" target="_blank">3637개 리뷰보기</a></li>
+                    <li class="second_row"><h5>90,000</h5><h3 class="red">20% <span>72,000원</span><a href="#" target="_blank" class="coupon">쿠폰받기</a></h3><p>720(1%)적립</p>
+                    </li>
+                    <li class="third_row"><h3>나의 구매 가능 가격</h3> <span>28%<strong>64,800원</strong></span></li>
+                    <li><h3>무이자 할부</h3><div class="discount"><p>최대 7개월 무이자 할부시 월10,285원 결제</p>
+                    <p class="discount_second">카드사별 할부 혜택 안내</p></div></li>
+                    <li><h3 class="delivery">배송 정보</h3><span>1일 이내 출고</span></p></p></li>
+                    <li><h3>배송비</h3><div class="deliveryfee"> <p>3,000원</p>
+                    <p>50,000원 이상 구매시 무료 배송</p>
+                    <p>제주/도서산간 3,000원 추가</p></div></li>
+                    <li><input type="text" placeholder="색상"></li>
+                    <li><button> 장바구니 담기</button><button>바로 구매하기</button></li>
+                </ul>
+            </div><!--content_second_right-->
+        </div><!--content_top_second-->
+        <ul class="tap_menu">
+            <li><a href="#">DETAIL</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a href="#">RETURN&DELIVERY</a></li>
+        </ul>
+        <div class="stockpage">
+            <img src="https://img.29cm.co.kr/next-product/2021/11/25/b332ef2e4aca402695a5e2ddedd79c75_20211125074942.gif?width=1000" alt="상품이미지">
+            <button> 상품 설명 더보기</button>
+        </div>
+        <div class="tableinfo">
+            <h3>상품정보 보기</h3>
+            <div class="tableimg"><img src="./images/table.png" alt="테이블표"></div>
+        </div><!--tableinfo-->
+        <div class="content_bottom_slide">
+            <h3>다른 고객이 함께 구매한 상품</h3>
+             <ul>
+                <li><img src="https://img.29cm.co.kr/next-product/2021/05/26/46c6b943487440f5911d7d47f113654e_20210526094614.jpg?width=300" alt="조명 이미지1"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>105,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/next-product/2022/02/04/9fa5b933177449219300424123231ff6_20220204182706.jpg?width=300" alt="조명 이미지2"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>92,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/next-product/2021/05/26/86d51d45277245abae07c979855fd8c6_20210526094533.jpg?width=300" alt="조명 이미지3"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">68,000</p>
+                <p class="disprice"><span>20%</span>45,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/next-product/2021/10/05/bb4bd71676ed49cfbb9c4c48a7798138_20211005175149.jpg?width=300" alt="조명 이미지4"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>92,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/item/202405/11ef1738108231f7b9bbf9213d2fb668.jpg?width=300" alt="조명 이미지5"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>132,000원</p></li>
+             </ul>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+            <div class="paging">
+                <strong><a href="" class="prev"><img src="./images/arrow-left.svg" alt="prev"/></a></strong>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <strong><a href="" class="next"><img src="./images/arrow-right.svg" alt="next"/></a></strong>
+              </div>
+        </div>
+</div><!--content_allwrap-->
+
+
+
+
+
+</div>
+</body>
+</html>
